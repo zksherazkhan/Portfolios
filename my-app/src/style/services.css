@@ -1,0 +1,36 @@
+.services {
+  background-color: #e9ecef;
+  margin-top: 90px;
+}
+
+.services-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  height: 100%;
+}
+.myrow {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  height: auto;
+  margin-top: 3em;
+}
+
+.service-card {
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+  flex: 1 1 calc(33.333% - 40px);
+  box-sizing: border-box;
+  transition: transform 0.3s ease;
+}
+
+@media (max-width: 600px) {
+  .service-card {
+    flex: 1 1 100%;
+  }
+}

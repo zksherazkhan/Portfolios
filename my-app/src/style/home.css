@@ -1,0 +1,120 @@
+.home {
+  width: 100%;
+  height: 80vh;
+  background-color: #f2f4f3;
+}
+.animatedTyping {
+  color: #203740;
+  font-size: 50px;
+  font-weight: bold;
+}
+.row {
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.home-heading {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  padding: 0 120px;
+}
+.heading-text {
+  font-size: 20px;
+}
+.hire-btn {
+  padding: 2px 30px;
+  font-size: 20px;
+  border-radius: 50px;
+  border: 2px solid transparent;
+  font-weight: 400;
+  color: white;
+  background-color: #203740;
+}
+.hire-btn:hover {
+  color: #203740;
+  background-color: white;
+  transition: all 0.5s ease;
+  border: 2px solid #203740;
+}
+.right {
+  min-height: 80vh;
+  position: relative;
+}
+.box {
+  position: absolute;
+  top: 15%;
+  left: 15%;
+  height: 420px;
+  width: 400px;
+  background-size: cover;
+  background-position: center center;
+  box-shadow: 0 20px 5px 5px rgba(0, 0, 0, 0.05);
+  animation: animate 5s ease-in-out infinite;
+  transition: all 1s ease-in-out;
+  margin: 0 auto;
+}
+.animation {
+  animation: headingAnimation 1.5s ease;
+}
+@keyframes headingAnimation {
+  0% {
+    transform: translateX(-140px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+
+@keyframes animate {
+  0% {
+    border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+    -o-border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+    -webkit-border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+    -moz-border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+    -ms-border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+  }
+  50% {
+    border-radius: 30% 60% 70% 40%/50% 60% 30% 70% 60%;
+    -webkit-border-radius: 30% 60% 70% 40%/50% 60% 30% 70% 60%;
+    -moz-border-radius: 30% 60% 70% 40%/50% 60% 30% 70% 60%;
+    -ms-border-radius: 30% 60% 70% 40%/50% 60% 30% 70% 60%;
+    -o-border-radius: 30% 60% 70% 40%/50% 60% 30% 70% 60%;
+  }
+  100% {
+    border-radius: 60% 40% 30% 70%/60% 30% 70% 60%;
+    -webkit-border-radius: 60% 40% 30% 70%/60% 30% 70% 60%;
+    -moz-border-radius: 60% 40% 30% 70%/60% 30% 70% 60%;
+    -ms-border-radius: 60% 40% 30% 70%/60% 30% 70% 60%;
+    -o-border-radius: 60% 40% 30% 70%/60% 30% 70% 60%;
+  }
+}
+
+@media (max-width: 600px) {
+  .home {
+    height: auto;
+    padding: 40px 0;
+  }
+  .right {
+    display: none;
+  }
+  .left {
+    width: 100%;
+    padding: 5px auto;
+  }
+  .home-heading {
+    width: 100%;
+    padding: 0 50px;
+  }
+  .box {
+    height: 280px;
+    width: 300px;
+  }
+}

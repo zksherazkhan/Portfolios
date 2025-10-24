@@ -1,0 +1,50 @@
+.nav {
+  font-size: 1.5em;
+  background-color: #203740;
+}
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%2858, 255, 255,255' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+.navbar-toggler {
+  border: none;
+}
+.My-Brand {
+  color: white;
+  font-size: 2.4rem;
+}
+.My-Brand:hover {
+  color: #ff6b08;
+  transform: scale(1.2);
+  transition: all 0.2s ease;
+  -webkit-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  -o-transform: scale(1.2);
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  -ms-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+}
+ul li a {
+  color: white;
+}
+.nav-link {
+  font-weight: 400;
+  color: white;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+}
+.nav-item {
+  margin: 0 8px;
+}
+.nav,
+link {
+  cursor: pointer;
+}
+.myLink:hover {
+  color: #ff6b08;
+  transform: scale(1.2);
+}
