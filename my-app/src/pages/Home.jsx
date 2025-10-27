@@ -37,7 +37,10 @@ const Home = () => {
                 replacements. Committed to providing quick, reliable service
                 with a focus on customer satisfaction.
               </p>
-              <Link to="contact" className="btn btn-full hire-btn">
+              <Link className="btn btn-full hire-btn"   smooth={true}
+                  
+                  duration={800}
+                  to="contact">
                 Hire Me
               </Link>
             </div>

@@ -11,7 +11,7 @@ const Gallery = () => {
   return (
     <>
       <div className="container myGallery" id="gallery">
-        <h1 className="text-center pt-5 ">Gallery</h1>
+        <h1 className="text-center pt-5 " style={{color:"#203740"}}>Gallery</h1>
         <div
           id="carouselExampleControls"
           className="carousel slide"

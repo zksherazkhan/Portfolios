@@ -10,7 +10,7 @@ const Services = () => {
       <div className="container  services-container mt-5 py-5">
         <div className="text-center">
           <p>What I Do</p>
-          <h1 className="about-heading">services</h1>
+          <h1 className="about-heading" style={{color:"#203740"}}>Services</h1>
           <p>
             My services cover mobile damage, screen failures, software issues,
             and motherboard repairs etc.
