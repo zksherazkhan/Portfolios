@@ -21,11 +21,3 @@
   height: auto;
 }
 
-@media screen and (max-width: 765px) {
-  .img-box {
-    margin: 30px 0 30px 0;
-  }
-  .img-box {
-    padding: 0 40px;
-  }
-}

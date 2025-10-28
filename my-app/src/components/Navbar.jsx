@@ -5,7 +5,7 @@ function Navbar() {
   return (
     <>
       <nav className="navbar navbar-expand-lg  nav">
-        <div className="container-fluid">
+        <div className="container">
           <Link className="navbar-brand My-Brand ms-3 " to="/">
             Yasar
           </Link>

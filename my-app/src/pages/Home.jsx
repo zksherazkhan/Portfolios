@@ -47,9 +47,8 @@ const Home = () => {
           </div>
           <div className="col-md-5 right">
             <div
-              className="box"
-              style={{ backgroundImage: `URL(${shapImg})` }}
-            ></div>
+              className="box">
+                <img src={shapImg} /></div>
           </div>
         </div>
       </div>
