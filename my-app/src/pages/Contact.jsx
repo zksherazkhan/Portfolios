@@ -3,9 +3,9 @@ import AppSettingsAltIcon from "@mui/icons-material/AppSettingsAlt";
 const Contact = () => {
   return (
     <>
-      <div className="container-fluid bg-black p-5 " id="contact">
-        <div className="row gy-4 mx-auto contact-row">
-          <div className="col-sm-4  coll">
+      <div className="container-fluid bg-black p-2 " id="contact">
+        <div className="row gy-2 mx-auto contact-row">
+          <div className="col-sm-12 col-md-4  coll">
             <AppSettingsAltIcon
               sx={{
                 fontSize: "6em",
@@ -17,7 +17,7 @@ const Contact = () => {
               <span className="repair">REPAIR</span>
             </p>
           </div>
-          <div className="col-sm-4  contactDetails">
+          <div className="col-sm-12 col-md-4   contactDetails">
             <h3>Get in Touch</h3>
             <div className=" mt-3">
               <p>
@@ -29,7 +29,7 @@ const Contact = () => {
               </p>
             </div>
           </div>
-          <div className="col-sm-4 px-5" style={{ color: "white" }}>
+          <div className="col-sm-12 col-md-4  px-5" style={{ color: "white" }}>
             <h3>Send Message</h3>
             <form className="mt-3">
               <div className="form-group mb-2">

@@ -1,5 +1,7 @@
 .contact-row {
-  margin-top: 20px;
+  margin-top: 0px;
+  background-color: #ff6b08;
+  min-height: 60vh;
 }
 
 .coll {
@@ -37,36 +39,3 @@
   background-clip: text;
 }
 
-@media screen and (max-width: 768px) {
-  .contact-row {
-    flex-direction: column;
-    align-items: center;
-  }
-  .coll {
-    flex-direction: column;
-  }
-  .contactDetails {
-    text-align: center;
-  }
-  .contact-btn {
-    width: 100%;
-    text-align: center;
-  }
-}
-
-@media screen and (max-width: 480px) {
-  .contact-row {
-    flex-direction: column;
-    align-items: center;
-  }
-  .coll {
-    flex-direction: column;
-  }
-  .contactDetails {
-    text-align: center;
-  }
-  .contact-btn {
-    width: 100%;
-    text-align: center;
-  }
-}

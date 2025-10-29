@@ -21,7 +21,7 @@ const Home = () => {
     <>
       <div className="home  container-fluid" id="/">
         <div className="row">
-          <div className="col-md-7 left ">
+          <div className="col-md-12 col-xl-7 ">
             <div className="home-heading animation">
               <p className="heading-text">
                 Hello,I will <br />
@@ -45,7 +45,7 @@ const Home = () => {
               </Link>
             </div>
           </div>
-          <div className="col-md-5 right">
+          <div className="col-xl-5 right">
             <div
               className="box">
                 <img src={shapImg} /></div>
