@@ -1,7 +1,5 @@
 .contact-row {
-  margin-top: 0px;
-  background-color: #ff6b08;
-  min-height: 60vh;
+   min-height: 60vh;
 }
 
 .coll {
@@ -10,6 +8,7 @@
   justify-content: center;
   color: white;
 }
+
 .contactDetails {
   color: white;
   display: flex;

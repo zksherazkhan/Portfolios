@@ -3,7 +3,7 @@ import AppSettingsAltIcon from "@mui/icons-material/AppSettingsAlt";
 const Contact = () => {
   return (
     <>
-      <div className="container-fluid bg-black p-2 " id="contact">
+      <div className="container-fluid bg-black p-2 py-5 mt-5" id="contact">
         <div className="row gy-2 mx-auto contact-row">
           <div className="col-sm-12 col-md-4  coll">
             <AppSettingsAltIcon
