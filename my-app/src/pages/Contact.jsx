@@ -1,6 +1,28 @@
 import "../style/contact.css";
+import { useRef } from "react";
 import AppSettingsAltIcon from "@mui/icons-material/AppSettingsAlt";
+import emailjs from '@emailjs/browser';
 const Contact = () => {
+
+  const form=useRef()
+    const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm('service_zfrxisr', 'template_94k26in', form.current, {
+        publicKey: '_jhRdXcar1Skd0iy4',
+      })
+      .then(
+        () => {
+          console.log('SUCCESS!');
+        },
+        (error) => {
+          console.log('FAILED...', error.text);
+        },
+      );
+      e.target.reset()
+  };
+
   return (
     <>
       <div className="container-fluid bg-black p-2 py-5 mt-5" id="contact">
@@ -31,14 +53,25 @@ const Contact = () => {
           </div>
           <div className="col-sm-12 col-md-4  px-5" style={{ color: "white" }}>
             <h3>Send Message</h3>
-            <form className="mt-3">
+            <form ref={form} onSubmit={sendEmail} className="mt-3">
               <div className="form-group mb-2">
+                <label className="form-label">Name</label>
+                <input
+                  type="text"
+                  className="form-control"
+                  id="exampleFormControlInput1"
+                  placeholder="Your full Name"
+                  name="user_name"
+                  required
+                />
                 <label className="form-label">Email address</label>
                 <input
                   type="email"
                   className="form-control"
                   id="exampleFormControlInput1"
                   placeholder="Name@example.com"
+                  name="user_email"
+                  required
                 />
               </div>
               <div className="form-group mb-2">
@@ -48,6 +81,7 @@ const Contact = () => {
                   id="exampleFormControlTextarea1"
                   placeholder="Write something.."
                   rows="2"
+                  name="message"
                 ></textarea>
               </div>
               <button type="submit" className="btn btn-full  contact-btn">

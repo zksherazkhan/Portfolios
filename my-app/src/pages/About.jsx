@@ -3,7 +3,6 @@ import aboutImg from "../assets/yasarImg.png";
 import { Reveal, Fade } from "react-awesome-reveal";
 import { keyframes } from "@emotion/react";
 
-import React from "react";
 
 const customAnimation = keyframes`
   from {
@@ -23,13 +22,13 @@ const About = () => {
 
   return (
     <>
-      <div style={{ padding: "20px", textAlign: "center" }}></div>
+     
       <div className="container mt-5 text-center " id="about">
         <p>Who am I</p> <h1 className="about-heading">About Me</h1>
         <p style={margintop}>
           Experienced Phone Repair Technician with 8 years in the field.
         </p>
-        <div className="about-description mt-5">
+        <div className="mt-5">
           <div className="row about-row ">
             <div className="col-md-5 ">
               <div className="about-img">
